@@ -1,4 +1,7 @@
-
+<?php
+//Includes 
+//include("header.php");
+?>
 
 <!DOCTYPE HTML>
 <!--
@@ -25,56 +28,8 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			    <div id="header">
-        <!-- Logo -->
-        <table>
-            <tr><td width="10%"><div><img src="images/LogoNew.jpeg" alt="PrevenMax" width="98%" /></div></td>
-            <td width="20%">
-                <h1><a href="index.php" id="logo">PrevenMax&nbsp&nbsp&nbsp</a></h1>
-            </td>
-            <td align="left" width="70%">
-            <h8><em>&nbsp&nbspMáxima Prevención en Seguridad e Higiene Laboral</em></h8>
-            </td></tr>
-        </table>
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li class="current"><a href="index.php">Inicio</a></li>
-                    <li>
-                        <a href="#">Servicios</a>
-                        <ul>
-                            <li><a href="#">Identificación de Peligros</a></li>
-                            <li><a href="#">Evaluación de Riesgos</a></li> <!-- Generales y Específicos-->
-                            <li><a href="#">Planes de Acción</a></li>
-                            <li><a href="#">Cronogramas Preventivos</a></li>
-                            <li><a href="#">Seguimiento Cuali y Cuantitativo</a></li>
-                            <li><a href="#">Planes de Emergencia</a></li>
-                            <li><a href="#">Planes de Contingencia</a></li>
-                            <li><a href="#">Asesoramiento Legal</a></li>
-                            <li><a href="#">Investigación de Accidentes</a></li>
-                            <li><a href="#">Inspecciones de Seguridad</a></li>
-                            <!--li>
-                                <a href="#">Submenu</a>
-                                <ul>
-                                    <li><a href="#">Lorem dolor</a></li>
-                                    <li><a href="#">Phasellus magna</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam nisl</a></li>
-                                    <li><a href="#">Veroeros feugiat</a></li>
-                                </ul>
-                            </li-->
-                            <li><a href="#">Vigilancia de la Salud</a></li>
-                            <li><a href="#">Capacitación y Formación</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="empresa.php">Nuestra Empresa</a></li>
-                    <li><a href="sectProductivos.php">Sectores Productivos</a></li>
-                    <!--li><a href="two-sidebar.html">Experiencia</a></li-->
-                    <li><a href="Contacto.php">Contacto</a></li>
-                </ul>
-            </nav>
-
-    </div>			<!-- End Header -->
+			<?php include("header.html"); ?>
+			<!-- End Header -->
 
 			<!-- Banner -->
 				<section id="banner">
@@ -121,11 +76,12 @@
 					</div>
 				</section>
 
-			<!-- Heading -->
+			<!-- Gigantic Heading -->
 				<section class="wrapper style2">
 					<div class="container">
 						<header class="major">
 							<h2>Contáctenos y obtenga el más completo asesoramiento en materia de Seguridad y Salud laboral</h2>
+							<!--p>La Seguridad NO se negocia !</p-->
 						</header>
 					</div>
 				</section>
@@ -175,62 +131,13 @@
 						</div>
 					</div>
 				</section>
-			<!-- Cierre Posts -->
 
-			<!-- Empresas que brindamos servicio -->
-				<!-- Second Heading -->
-				<section class="wrapper style2">
-					<div class="container">
-						<header class="major">
-							<h2>Empresas asesoradas en Salud y Seguridad Laboral por PrevenMax</h2>
-						</header>
-					</div>
-				</section>
-
-				<section class="wrapper style1">
-					<!--h2>&emsp; &emsp; Empresas asesoradas en Salud y Seguridad Laboral por PrevenMax</h2-->
-					<div class="container">
-					<h3>Pintura de Edificios</h3>
-					<h4>Se especializa en el uso de Técnicas de Acción y Posicionamiento con Cuerdas (TAPC).</h4>
-
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<img src="images/clientes/Edificios.jpg" alt="Edificios"/>
-									<div class="inner">
-										<h3>Hidrolavados, pintura, albañilería.</h3>
-									</div>
-								</div>
-							</section>
-							</div>
-							<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<img src="images/clientes/Esquina.jpg" alt="Esquina"/>
-									<div class="inner">
-										<h3>Acondicionamiento de fachadas.</h3>
-									</div>
-								</div>
-							</section>
-							</div>
-							<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<img src="images/clientes/PintEdificio.jpg" alt="Pintura"/>
-									<div class="inner">
-										<h3>Pintura de edificios.</h3>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
-			<!-- Cierre Empresas asesoradas -->
 			<!-- CTA -->
 				<section id="cta" class="wrapper style3">
 					<div class="container">
 						<header>
 							<h2>Listo para enviarnos su consulta ?</h2>
+							<!--a href="#" class="button">Insert Coin</a-->
 						</header>
 					</div>
 				</section>
@@ -267,44 +174,14 @@
 							<h3>Contacte con nosotros</h3>
 								<p>Escríbanos y cuente con la asistencia de un Tecnólogo Prevencionista a la brevedad.</p>
 
-								            <form id="contacto" method="POST" action="mail_adjuntos.php" target="_self" enctype="multipart/form-data">
-                <div class="row gtr-50">
-                    <div class="col-6 col-12-mobilep">
-                        <input type="text" name="name" id="name" placeholder="Nombre" />
-                    </div>
-                    <div class="col-6 col-12-mobilep">
-                        <input type="email" name="email" id="email" placeholder="Email" />
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" id="message" placeholder="Su mensaje" rows="5"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions">
-                            <li><input type="submit" class="button alt" value="Enviar" /></li>
-                        </ul>
-                    </div>
-                </div>
-                </form>							</section>
+								<?php include("formContacto.html"); ?>
+							</section>
 						</div>
 					</div>
 
 					<!-- Icons -->
-					<!-- Icons -->
-<br> <br>
-<ul class="icons">
-        <li><a href="https://twitter.com/prevenmaxurugu1" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="https://www.facebook.com/PrevenMax-1691796467593613/"  target="_blank"
-             class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="https://www.linkedin.com/in/prevenmax" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://www.instagram.com/prevenmaxuruguay"  target="_blank" class="icon fa-google-plus"><span class="label">Instagram</span></a></li>
-    </ul>
+					<?php include("icons.html"); ?>
 
-<!-- Copyright -->
-    <div class="copyright">
-        <ul class="menu">
-            <li>&copy; PrevenMax. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-        </ul>
-    </div>
 				</div>
 
 		</div>
